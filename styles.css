@@ -304,6 +304,10 @@ body {
 .section-header {
     text-align: center;
     margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .section-number {
@@ -315,7 +319,7 @@ body {
 .section-header h2 {
     font-size: 2.5rem;
     font-weight: 800;
-    margin: 1rem 0;
+    margin: 0;
 }
 
 .become-client-btn {
@@ -326,6 +330,8 @@ body {
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
 }
 
 .become-client-btn:hover {
@@ -866,6 +872,13 @@ body {
     .section-header h2 {
         font-size: 2rem;
     }
+    
+    .become-client-btn {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+        display: block;
+    }
 }
 
 @media (max-width: 480px) {
@@ -946,10 +959,5 @@ html {
     
     .section-number {
         font-size: 0.8rem;
-    }
-    
-    .become-client-btn {
-        width: 100%;
-        max-width: 250px;
     }
 }
